@@ -1,3 +1,4 @@
+
 balance = 5000
 while True:
     print("\n======== welcome to our atm =========")
