@@ -7,7 +7,7 @@ print("4.vip")
 print("5.visit")
 name = input("enter your name: ")
 mobille_number = int(input("enter your mobile number: "))
-while true:
+while True:
     if mobille_number>999999999 and mobille_number<10000000000:
         print("valid number")
         break
