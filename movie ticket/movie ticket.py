@@ -1,58 +1,41 @@
-print("=======welcome to mitra multiplex=========")
-print("a.toxic")
-print("b.sayara")
-print("c.jailor")
-print("d.animal")
-name = input("enter your name: ")
-choose = input("enter your choice of movie: ")
+print("===== MOVIE TICKET BOOKING =====")
 
-if choose == "a":
-    print("movie = toxic")
-elif choose == "b":
-    print("sayara")
-elif choose == "c":
-    print("jailor")
-elif choose == "d":
-    print("animal")
+name = input("Enter your name: ")
+
+print("\n1. Normal Movie - Rs. 150")
+print("2. 3D Movie - Rs. 250")
+print("3. VIP Movie - Rs. 400")
+
+choice = int(input("\nEnter your choice (1-3): "))
+
+tickets = int(input("Enter number of tickets: "))
+
+if choice == 1:
+    price = 150
+    movie_type = "Normal Movie"
+
+elif choice == 2:
+    price = 250
+    movie_type = "3D Movie"
+
+elif choice == 3:
+    price = 400
+    movie_type = "VIP Movie"
+
 else:
-    print("invalid choice")
-exit()
+    price = 0
+    movie_type = "Invalid Choice"
 
-print("\nmovie time table: ")
-print("1.   10 am")
-print("2.   12.30 am")
-print("3.   2pm")
-print("4.   10pm")
+if price > 0 and tickets > 0:
+    total = price * tickets
 
-choose = input("enter your choice")
+    print("\n===== BOOKING DETAILS =====")
+    print("Name:", name)
+    print("Movie Type:", movie_type)
+    print("Tickets:", tickets)
+    print("Total Amount: Rs.", total)
 
-if choose=="1":
-    print("10 am")
-elif choose=="2":
-    print("12.30am")
-
-elif choose=="3":
-    print("2 pm")
-
-elif choose=="4":
-    print("10 pm")
 else:
-    print("invalid choice")
-exit()
+    print("Invalid choice or ticket quantity!")
 
-ticket = int(input("enter number of ticket: "))
-ticket = 200
-
-if ticket<=0:
-    total = ticket * 200
-
-print("=====total information=====")
-print("enter your name: ",name)
-print("")
-
-
-
-
-
-
-
+print("\nThank You!")
