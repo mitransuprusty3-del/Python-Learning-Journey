@@ -6,12 +6,14 @@ print("3.premium")
 print("4.vip")
 print("5.visit")
 name = input("enter your name: ")
-mobille_number = int(input("enter your mobile number: "))
-if mobille_number>999999999 and mobille_number<10000000000:
-    print("valid number")
-else:
-    print("not valid")
-    break
+while True:
+    mobille_number = int(input("enter your mobile number: "))
+    if mobille_number>999999999 and mobille_number<10000000000:
+        print("valid number")
+        break
+    else:
+        print("not valid")
+    
 
 choose = input("enter your number for membership: ")
 
